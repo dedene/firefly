@@ -2,7 +2,7 @@ module Firefly
   class Base62
   
     CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
-    BASE = 62
+    BASE = 36
   
     def self.encode(value)
       s = []
