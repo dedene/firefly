@@ -36,7 +36,7 @@
         %td.value= @highlight.created_at.strftime("%Y-%m-%d %H:%M")
         %td.value
           %a{ :href => "http://twitter.com/home?status=#{tweet(short_url(@highlight))}" }
-            %img.twitter{ :src => "/images/twitter.png", :width => "16", :height => "16" }
+            %img.twitter{ :src => "http://#{config[:hostname]}/images/twitter.png", :width => "16", :height => "16" }
 
   %h2 Recently shortened
   
@@ -56,7 +56,7 @@
         %td.value= url.created_at.strftime("%Y-%m-%d %H:%M")
         %td.value
           %a{ :href => "http://twitter.com/home?status=#{tweet(short_url(url))}" }
-            %img.twitter{ :src => "/images/twitter.png", :width => "16", :height => "16" }
+            %img.twitter{ :src => "http://#{config[:hostname]}/images/twitter.png", :width => "16", :height => "16" }
           
   :javascript
     $(document).ready(function() {
