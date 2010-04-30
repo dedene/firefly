@@ -10,7 +10,7 @@
     .header
       %ul.nav
         %li.current
-          %a{ :href => '/' } #{@title}
+          %a{ :href => "http://#{@config[:hostname]}/" } #{@title}
           
     #main
       = yield

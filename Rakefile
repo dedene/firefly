@@ -9,7 +9,7 @@ begin
     gemspec.description = "FireFly is a simple URL shortner for personal use. It's powered by Sinatra and can be run with any Rack-capable web server."
     gemspec.email = "ariejan@ariejan.net"
     gemspec.homepage = "http://github.com/ariejan/firefly"
-    gemspec.authors = ["Ariejan de Vroom"]
+    gemspec.authors = ["Peter Dedene"]
     gemspec.rubyforge_project = 'firefly'
     gemspec.add_dependency('sinatra', '>= 1.0')
     gemspec.add_dependency('dm-core', '>= 0.10.2')

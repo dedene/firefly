@@ -11,7 +11,7 @@
   %h1 How about shortening a URL?
   
   .the_form
-    %form{ :action => '/api/add', :method => 'post' }
+    %form{ :action => "http://#{@config[:hostname]}/api/add", :method => 'post' }
       %input{ :type => "hidden", :name => "visual", :value => "1" }
       %p
         %input.big_url{ :type => 'text', :name => 'url', :id => 'url', :size => 50, :autocomplete => "off", :spellcheck => 'false' }
@@ -70,7 +70,7 @@
   %p
     Please enter your API key below to make sure only you can shorten URLs here.
   
-  %form{ :action => '/api/set', :method => 'post' }
+  %form{ :action => "http://#{@config[:hostname]}/api/set", :method => 'post' }
     %p
       %label{ :for => 'api_key' } API Key
       %input{ :type => 'password', :name => 'api_key', :id => 'api_key' }
