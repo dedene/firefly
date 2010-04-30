@@ -92,7 +92,7 @@ module Firefly
         puts "NOT MATCH"
       end
       
-      redirect '/'
+      redirect "http://#{config[:hostname]}/"
     end
     
     # GET /add?url=http://ariejan.net&api_key=test
@@ -106,7 +106,7 @@ module Firefly
       @result ||= "Invalid URL specified."
       
       if params[:visual]
-        redirect "/?highlight=#{@code}"
+        redirect "http://#{config[:hostname]}/?highlight=#{@code}"
       else
         @result
       end
